@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Conv_MuseoCyrl 300';
+  src: url('../fonts/MuseoCyrl 300.eot');
+  src: local('☺'), url('../fonts/MuseoCyrl 300.woff') format('woff'), url('../fonts/MuseoCyrl 300.ttf') format('truetype'), url('../fonts/MuseoCyrl 300.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_MuseoCyrl 300Italic';
+  src: url('../fonts/MuseoCyrl 300Italic.eot');
+  src: local('☺'), url('../fonts/MuseoCyrl 300Italic.woff') format('woff'), url('../fonts/MuseoCyrl 300Italic.ttf') format('truetype'), url('../fonts/MuseoCyrl 300Italic.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_MuseoCyrl 500';
+  src: url('../fonts/MuseoCyrl 500.eot');
+  src: local('☺'), url('../fonts/MuseoCyrl 500.woff') format('woff'), url('../fonts/MuseoCyrl 500.ttf') format('truetype'), url('../fonts/MuseoCyrl 500.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_MuseoCyrl 700';
+  src: url('../fonts/MuseoCyrl 700.eot');
+  src: local('☺'), url('../fonts/MuseoCyrl 700.woff') format('woff'), url('../fonts/MuseoCyrl 700.ttf') format('truetype'), url('../fonts/MuseoCyrl 700.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../fonts/MyriadPro.eot');
+  src: local('☺'), url('../fonts/MyriadPro.woff') format('woff'), url('../fonts/MyriadPro.ttf') format('truetype'), url('../fonts/MyriadPro.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$MuseoCyrl300: 'Conv_MuseoCyrl 300';
+$MuseoCyrl500: 'Conv_MuseoCyrl 500';
+$MuseoCyrl700: 'Conv_MuseoCyrl 700';
+$MyriadPro: 'MyriadPro';
+
+$luxor_gold: #9F8030;
