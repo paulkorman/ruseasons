@@ -153,8 +153,7 @@ html .loader {
 
 html .loader_inner {
   background-image: url("../img/preloader.gif");
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #fff;
@@ -350,23 +349,25 @@ html .loader_inner {
   color: #9F8030;
 }
 
-#slide1 {
+#slide1,
+.slide1 {
   background-image: url(../img/ballet-red.jpg);
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-position: 50% 0;
   position: relative;
 }
 
-#slide1 .bottom-pos {
+#slide1 .bottom-pos,
+.slide1 .bottom-pos {
   padding: 0 120px;
   position: absolute;
   width: 100%;
   bottom: 113px;
 }
 
-#slide1 .gold-brd {
+#slide1 .gold-brd,
+.slide1 .gold-brd {
   border: 3px solid #9F8030;
   margin-right: 38px;
   padding-top: 40px;
@@ -377,16 +378,19 @@ html .loader_inner {
   font-weight: 500;
 }
 
-#slide1 .gold-brd p {
+#slide1 .gold-brd p,
+.slide1 .gold-brd p {
   margin-bottom: 0;
 }
 
-#slide1 .arrow-right {
+#slide1 .arrow-right,
+.slide1 .arrow-right {
   line-height: 51px;
   cursor: pointer;
 }
 
-#slide1 .arrow-right::after {
+#slide1 .arrow-right::after,
+.slide1 .arrow-right::after {
   content: '';
   display: inline-block;
   width: 28px;
@@ -396,24 +400,28 @@ html .loader_inner {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAzCAMAAACzKZhFAAAAaVBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8G612AAAAInRSTlMADWjkdyQV9utDHPrc01vxmIdOLQPJpcK+N9rPVjwxtbEdUin5vwAAAJJJREFUOMu11EcOAjEQRFF7cs5gmAT0/Q9JzZ6yhOT+27f/xhjrSsOyN8mpnr149MihB9MS2j9VtIaeTCdoMWvoLtCUaQeNVTS69OPTptLQBLpmPm1VdIRulukAdcTmQqSe/rcUJjuxGNaFteqyiFgT3rIVlhBrw5vdYCMbjoI52EDsEd6WF+y+/MY3NRR5DMrtCzx8GX2MvXlSAAAAAElFTkSuQmCC") no-repeat;
 }
 
-#slide1 .bottom {
+#slide1 .bottom,
+.slide1 .bottom {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
-#slide1 .bottom .fs-14 {
+#slide1 .bottom .fs-14,
+.slide1 .bottom .fs-14 {
   font-family: "MyriadPro";
   color: #fff;
   font-weight: 300;
 }
 
-#slide1 .bottom .underline {
+#slide1 .bottom .underline,
+.slide1 .bottom .underline {
   padding: 0 20px;
   cursor: pointer;
 }
 
-#slide1 .bottom .underline::after {
+#slide1 .bottom .underline::after,
+.slide1 .bottom .underline::after {
   display: block;
   content: '';
   width: 100%;
@@ -641,8 +649,7 @@ html .loader_inner {
 #slide2 {
   background-image: url(../img/ballet-red.jpg);
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-position: 50% 0;
 }
 
@@ -674,6 +681,8 @@ html .loader_inner {
   background-color: #9F8030;
   margin: 0 auto;
   -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
 
@@ -705,8 +714,7 @@ html .loader_inner {
 #section1 {
   background: url(../img/ballet-light.jpg);
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-position: 50% 0;
 }
 
@@ -863,8 +871,7 @@ html .loader_inner {
 #section6 {
   background-image: url(../img/zriteli.jpg);
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-position: 50% 0;
 }
 
@@ -972,8 +979,7 @@ html .loader_inner {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAA8CAMAAAAwsEgmAAAAP1BMVEUAAACfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDAOvqS5AAAAFXRSTlMATvTwQutpWzcteOQkiNyWHMJ7dV3BxWcZAAAAZklEQVQ4y9XOuQGAMAxDUR8JuQMB9p+VDayCxlH7XyGyFhbZXZLdlc3O4rxrMHsS3/3VbPbDe4/F7NV5v1s3+/jZ6ZwXeRBjdiTaLqK2gkT0IR4ojpiR0F1E0oCEOBHwKSsjIVCsD0kjBPr5k/H+AAAAAElFTkSuQmCC") no-repeat;
   float: left;
   cursor: pointer;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .arrow-slider-prev-gold a {
@@ -989,8 +995,7 @@ html .loader_inner {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAA8CAMAAAAwsEgmAAAAQlBMVEUAAACfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDA4aazPAAAAFnRSTlMATvTwQutpWy03eOQkiNyWHMJ7dV07PX5NBQAAAGpJREFUOMvV1TkWwCAIRVEF46yJGfa/1eyAX1gotO82HAqMMcMZeQIhYRkKskqEYygoKBEfv0Ak9kpEPLDISkQtNxRtVlz9XNprb2CBvXssGZx5dX/Eng4vd967Ow5yp8Wd5W7Zzr2iAfoPaHwFBh54JiEAAAAASUVORK5CYII=") no-repeat;
   float: right;
   cursor: pointer;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .arrow-slider-next-gold a {
@@ -999,12 +1004,15 @@ html .loader_inner {
   height: 100%;
 }
 
-#mycalendar .fc-right .fc-button,
-#mycalendar .fc-right h2 {
-  float: left;
+#calendar h2 {
+  font-size: 17px;
+  font-family: "MyriadPro";
+  color: #d1111c;
+  text-transform: capitalize;
 }
 
-#mycalendar .fc-right .fc-button {
+#calendar .fc-right .fc-button,
+#calendar .fc-right .fc-button {
   border: none;
   background: none;
 }
@@ -1074,29 +1082,35 @@ html .loader_inner {
   .section .intro {
     padding: 145px 75px 90px 22px;
   }
-  #slide1 .bottom-pos {
+  #slide1 .bottom-pos,
+  .slide1 .bottom-pos {
     padding: 0 22px;
   }
-  #slide1 .bottom-pos .col-md-9 {
+  #slide1 .bottom-pos .col-md-9,
+  .slide1 .bottom-pos .col-md-9 {
     padding: 0;
   }
-  #slide1 .bottom-pos .pr-50-m {
+  #slide1 .bottom-pos .pr-50-m,
+  .slide1 .bottom-pos .pr-50-m {
     padding-right: 50px;
   }
-  #slide1 .gold-brd p.fs-18 {
+  #slide1 .gold-brd p.fs-18,
+  .slide1 .gold-brd p.fs-18 {
     line-height: 39.91311px;
   }
-  #slide1 .arrow-right::after {
+  #slide1 .arrow-right::after,
+  .slide1 .arrow-right::after {
     width: 21.91308px;
     height: 39.91311px;
-    -webkit-background-size: cover;
-            background-size: cover;
+    background-size: cover;
     margin-bottom: -15.6522px;
   }
-  #slide1 .bottom .underline {
+  #slide1 .bottom .underline,
+  .slide1 .bottom .underline {
     padding: 0 20px !important;
   }
-  #slide1 .bottom .col-md-12:first-child {
+  #slide1 .bottom .col-md-12:first-child,
+  .slide1 .bottom .col-md-12:first-child {
     margin-bottom: 20px;
   }
   #rightbar {
@@ -1205,21 +1219,26 @@ html .loader_inner {
   #header .select-lang {
     margin-right: 10px;
   }
-  #slide1 .bottom {
+  #slide1 .bottom,
+  .slide1 .bottom {
     position: relative;
     width: auto;
   }
-  #slide1 .col-lg-8.mb-30 {
+  #slide1 .col-lg-8.mb-30,
+  .slide1 .col-lg-8.mb-30 {
     margin-bottom: 30px;
   }
-  #slide1 .bottom-pos {
+  #slide1 .bottom-pos,
+  .slide1 .bottom-pos {
     padding: 0 10px;
     bottom: 100px;
   }
-  #slide1 .bottom-pos .pr-50-m {
+  #slide1 .bottom-pos .pr-50-m,
+  .slide1 .bottom-pos .pr-50-m {
     padding-right: 0;
   }
-  #slide1 .bottom-pos .gold-brd {
+  #slide1 .bottom-pos .gold-brd,
+  .slide1 .bottom-pos .gold-brd {
     margin-right: 20px;
     margin-left: 20px;
     padding-right: 0;
@@ -1227,24 +1246,27 @@ html .loader_inner {
     padding-bottom: 24px;
     border-width: 2px;
   }
-  #slide1 .bottom-pos p.fs-18.hidden-sm-up {
+  #slide1 .bottom-pos p.fs-18.hidden-sm-up,
+  .slide1 .bottom-pos p.fs-18.hidden-sm-up {
     line-height: 24.8064px;
     font-size: 14px;
     color: #ffffff;
     font-family: "Conv_MuseoCyrl 500";
   }
-  #slide1 .bottom-pos .arrow-right {
+  #slide1 .bottom-pos .arrow-right,
+  .slide1 .bottom-pos .arrow-right {
     padding-top: 54px;
     margin-right: 23px;
   }
-  #slide1 .bottom-pos .arrow-right::after {
+  #slide1 .bottom-pos .arrow-right::after,
+  .slide1 .bottom-pos .arrow-right::after {
     width: 13.6192px;
     height: 24.8064px;
-    -webkit-background-size: cover;
-            background-size: cover;
+    background-size: cover;
     margin-bottom: -7px;
   }
-  #slide1 .bottom-pos .mr--63 {
+  #slide1 .bottom-pos .mr--63,
+  .slide1 .bottom-pos .mr--63 {
     margin-right: -10px;
   }
   #main-menu {
@@ -1277,8 +1299,7 @@ html .loader_inner {
     width: 110%;
     margin-left: -5px;
     margin-right: -10px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   .news-1 .gold-brd .red {
     width: 100%;
@@ -1359,3 +1380,5 @@ html .loader_inner {
     margin: 30px auto;
   }
 }
+
+/*# sourceMappingURL=russianseasons.css.map */
