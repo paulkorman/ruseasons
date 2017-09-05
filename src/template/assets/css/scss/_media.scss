@@ -432,6 +432,14 @@
     height: 25%;
   }
 
+  #calendar {
+    .fc-view-container {
+      overflow-x: scroll;
+      .fc-basic-view {
+        width: 180%;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width : 769px) {

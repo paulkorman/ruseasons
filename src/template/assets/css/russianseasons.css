@@ -256,7 +256,7 @@ html .loader_inner {
   text-decoration: none;
 }
 
-#rightbar .langs .active {
+#rightbar .langs li.active a {
   color: #9F8030;
 }
 
@@ -1360,6 +1360,12 @@ html .loader_inner {
   }
   .modal:before {
     height: 25%;
+  }
+  #calendar .fc-view-container {
+    overflow-x: scroll;
+  }
+  #calendar .fc-view-container .fc-basic-view {
+    width: 180%;
   }
 }
 
