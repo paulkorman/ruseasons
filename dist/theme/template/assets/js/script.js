@@ -117,14 +117,14 @@ $(document).ready(function() {
       if(index == 1 || index == 7){
 
         $('#header .logo img').attr('src','template/assets/img/logo-dark.png');
-        $('#rightbar .year-select').css('color','#ffffff');
+        $('#rightbar .year-select a').css('color','#ffffff');
         console.log(!$('#rightbar .langs a').hasClass('active'));
         $('#rightbar .langs a:not(.active)').css('color', '#ffffff');
 
       } else if(index == 2 || index == 3 || index == 4 || index == 5 || index == 6 || index == 8 || index == 9 || index == 10) {
 
         $('#header .logo img').attr('src','template/assets/img/logo-light.png');
-        $('#rightbar .year-select').css('color','#9F8030');
+        $('#rightbar .year-select a').css('color','#9F8030');
         $('#rightbar .langs a:not(.active)').css('color', '##b41525');
 
       }
@@ -314,6 +314,11 @@ $(document).ready(function() {
     //}
   });
 
+  $('[data-toggle="tooltip"]').tooltip({
+    'container': 'body',
+    'placement': 'bottom'
+  });
+
 
 
   $('#gallery-img .wrap-img').on('click', function(e){
@@ -373,7 +378,9 @@ $(document).ready(function() {
       $(selMap).css({'display':'block', 'margin': 'auto'});
   });
 
-
+  $('.parallax-1').parallax({imageSrc: '../template/assets/img/ballet-light.jpg'});
+  $('.parallax-2').parallax({imageSrc: '../template/assets/img/bg-img.png'});
+  $('.parallax-3').parallax({imageSrc: '../template/assets/img/zriteli.jpg'});
 
 
 

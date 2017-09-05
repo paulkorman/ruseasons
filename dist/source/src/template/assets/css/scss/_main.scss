@@ -153,7 +153,7 @@ html .loader_inner {
   right: 67px;
   top: 0;
   height: 100%;
-  z-index: 10;
+  z-index: 102;
   .bottom {
     position: absolute;
     bottom: 47px;
@@ -164,6 +164,10 @@ html .loader_inner {
     font-size: 24px;
     color: #fff;
     margin-top: 115px;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
   }
   .soc {
     width: 100%;
@@ -171,6 +175,9 @@ html .loader_inner {
     a {
       font-size: 20px;
       color: $luxor_gold;
+      .fa:hover {
+        color: #b41525;
+      }
     }
   }
   .langs {
@@ -517,7 +524,7 @@ html .loader_inner {
 }
 
 #gallery-img {
-  padding-top: 60px;
+  //padding-top: 60px;
   .row {
     > div {
       padding: 0 5px 10px;
@@ -666,6 +673,7 @@ $pl: 120px;
       }
       li.active {
         span {
+          font-style: italic;
           background-color: #b41525;
           color: #fff;
         }
@@ -823,6 +831,13 @@ $pl: 120px;
 .modal-content {
   background-color: transparent;
   border: none;
+  .bx-wrapper {
+    li img {
+      height: 500px;
+      width: auto;
+      margin: 0 auto;
+    }
+  }
 }
 
 .modal {
@@ -958,4 +973,41 @@ $pl: 120px;
   }
 }
 
+.tooltip-inner {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.tooltip.tooltip-top .tooltip-inner::before, .tooltip.bs-tether-element-attached-bottom .tooltip-inner::before {
+
+  border-top-color: #fff;
+}
+
+.tooltip.tooltip-right .tooltip-inner::before, .tooltip.bs-tether-element-attached-left .tooltip-inner::before {
+
+  border-right-color: #fff;
+}
+
+.tooltip.tooltip-bottom .tooltip-inner::before, .tooltip.bs-tether-element-attached-top .tooltip-inner::before {
+
+  border-bottom-color: #fff;
+}
+
+.tooltip.tooltip-left .tooltip-inner::before, .tooltip.bs-tether-element-attached-right .tooltip-inner::before {
+
+  border-left-color: #fff;
+}
+
+.parallax-window {
+  background: transparent !important;
+}
+
+[data-menuanchor="partners"] {
+  span {
+    display: block;
+  }
+  span:last-child {
+    margin-top: -15px;
+  }
+}
 

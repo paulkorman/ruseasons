@@ -199,7 +199,7 @@ html .loader_inner {
   right: 67px;
   top: 0;
   height: 100%;
-  z-index: 10;
+  z-index: 102;
 }
 
 #rightbar .bottom {
@@ -215,6 +215,11 @@ html .loader_inner {
   margin-top: 115px;
 }
 
+#rightbar .year-select a {
+  text-decoration: none;
+  color: #fff;
+}
+
 #rightbar .soc {
   width: 100%;
   margin-bottom: 20px;
@@ -223,6 +228,10 @@ html .loader_inner {
 #rightbar .soc a {
   font-size: 20px;
   color: #9F8030;
+}
+
+#rightbar .soc a .fa:hover {
+  color: #b41525;
 }
 
 #rightbar .langs ul {
@@ -600,10 +609,6 @@ html .loader_inner {
   cursor: pointer;
 }
 
-#gallery-img {
-  padding-top: 60px;
-}
-
 #gallery-img .row > div {
   padding: 0 5px 10px;
 }
@@ -740,6 +745,7 @@ html .loader_inner {
 }
 
 #section2 .wrap-content .map-selection li.active span {
+  font-style: italic;
   background-color: #b41525;
   color: #fff;
 }
@@ -892,6 +898,12 @@ html .loader_inner {
   border: none;
 }
 
+.modal-content .bx-wrapper li img {
+  height: 500px;
+  width: auto;
+  margin: 0 auto;
+}
+
 .modal {
   text-align: center;
   padding: 0 !important;
@@ -1020,6 +1032,39 @@ html .loader_inner {
 #calendar .fc-right .fc-button {
   border: none;
   background: none;
+}
+
+.tooltip-inner {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.tooltip.tooltip-top .tooltip-inner::before, .tooltip.bs-tether-element-attached-bottom .tooltip-inner::before {
+  border-top-color: #fff;
+}
+
+.tooltip.tooltip-right .tooltip-inner::before, .tooltip.bs-tether-element-attached-left .tooltip-inner::before {
+  border-right-color: #fff;
+}
+
+.tooltip.tooltip-bottom .tooltip-inner::before, .tooltip.bs-tether-element-attached-top .tooltip-inner::before {
+  border-bottom-color: #fff;
+}
+
+.tooltip.tooltip-left .tooltip-inner::before, .tooltip.bs-tether-element-attached-right .tooltip-inner::before {
+  border-left-color: #fff;
+}
+
+.parallax-window {
+  background: transparent !important;
+}
+
+[data-menuanchor="partners"] span {
+  display: block;
+}
+
+[data-menuanchor="partners"] span:last-child {
+  margin-top: -15px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -1374,6 +1419,11 @@ html .loader_inner {
   }
   #calendar .fc-view-container .fc-basic-view {
     width: 180%;
+  }
+  .modal-content .bx-wrapper li img {
+    max-height: 300px;
+    width: auto;
+    margin: 0 auto;
   }
 }
 

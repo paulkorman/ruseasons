@@ -58,8 +58,9 @@
 
 </head>
 <body>
-
+<div class="parallax-window"></div>
 <div id="header">
+
     <div class="logo">
         <a href="/"><img src="template/assets/img/logo-dark.png" alt=""></a>
     </div>
@@ -95,7 +96,7 @@
             <li data-menuanchor="program"><a href="#program">Программа</a></li>
             <li data-menuanchor="news-1"><a href="#news-1">Новости</a></li>
             <li data-menuanchor="gallery"><a href="#gallery">Галерея</a></li>
-            <li data-menuanchor="partners"><a href="#partners">Информационные <br>партнёры</a></li>
+            <li data-menuanchor="partners"><a href="#partners"><span>Информационные</span><span>партнёры</span></a></li>
             <li data-menuanchor="participants"><a href="#participants">Участники</a></li>
             <li><a href="#">Брендбук</a></li>
         </ul>
@@ -103,7 +104,7 @@
     <div class="menu-footer clearfix">
         <div class="year-select">
             <a href="#">‘17</a>&nbsp;&nbsp;
-            <a href="#">‘18</a>
+            <!--<a href="#">‘18</a>-->
         </div>
         <div class="soc text-center">
             <a href="https://www.facebook.com/Russian-Seasons-1671385853166343/" target="_blank"><i class="fa fa-facebook"></i></a><br>
@@ -117,8 +118,8 @@
 <div id="rightbar" class="hidden-sm-down">
 
     <div class="year-select">
-        <p>‘17</p>
-        <p>‘18</p>
+        <p><a href="#">‘17</a></p>
+        <!--<p><a href="#">‘18</a></p>-->
     </div>
     <div class="bottom ">
         <div class="soc text-center">
@@ -258,7 +259,7 @@
         </div>
 
     </div>
-    <div class="section fp-auto-height" id="section1">
+    <div class="section fp-auto-height parallax-window parallax-1" id="section1">
         <div class="intro about-project">
             <h1 class="title text-uppercase pl-15">О проекте</h1>
             <div class="container-fluid container-fluid-my">
@@ -299,20 +300,28 @@
                     <p class="fs-14" style="width: 250px">График проведения проекта<br>«Русские сезоны» 2017 – 2020 гг.:</p>
                     <ul class="clear-list map-selection map-list-js" style="width: 200px">
                         <li class="active" data-map="japan-map">
-                            <span class="fs-17 font-italic">2017</span><br>
-                            <span class="fs-29 font-italic">Япония</span>
+                            <span class="fs-17">2017</span><br>
+                            <span class="fs-29">Япония</span><br><br>
+                            <!--<ul class="font-italic fs-17">-->
+                                <!--<li>Токио</li>-->
+                                <!--<li>Киото</li>-->
+                                <!--<li>Хоккайдо</li>-->
+                                <!--<li>Канто</li>-->
+                                <!--<li>Тохоку</li>-->
+                                <!--<li>Кансай</li>-->
+                            <!--</ul>-->
                         </li>
                         <li data-map="italy-map">
-                            <span class="fs-17 font-italic">2017</span><br>
-                            <span class="fs-29 font-italic">Италия</span>
+                            <span class="fs-17">2017</span><br>
+                            <span class="fs-29">Италия</span>
                         </li>
                         <li data-map="usa-map">
-                            <span class="fs-17 font-italic">2017</span><br>
-                            <span class="fs-29 font-italic">США</span>
+                            <span class="fs-17">2017</span><br>
+                            <span class="fs-29">США</span>
                         </li>
                         <li data-map="germany-map">
-                            <span class="fs-17 font-italic">2017</span><br>
-                            <span class="fs-29 font-italic">Германия</span>
+                            <span class="fs-17">2017</span><br>
+                            <span class="fs-29">Германия</span>
                         </li>
                     </ul>
                 </div>
@@ -380,7 +389,6 @@
                                     class="area" />
                         </g>
                         <g id="45" class="city">
-                            <title>City</title>
                             <circle
                                     r="10"
                                     cy="504.50507"
@@ -391,10 +399,10 @@
                                     cy="504.50507"
                                     cx="-117.85714"
                                     id="path3401"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="582.6413"
@@ -405,10 +413,10 @@
                                     cy="582.6413"
                                     cx="-151.77542"
                                     id="path3401-0"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="624.56262"
@@ -419,10 +427,10 @@
                                     cy="624.56262"
                                     cx="-58.841393"
                                     id="path3401-0-0"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="717.49664"
@@ -433,10 +441,10 @@
                                     cy="717.49664"
                                     cx="-190.91884"
                                     id="path3401-0-0-9"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="488.43362"
@@ -447,10 +455,10 @@
                                     cy="488.43362"
                                     cx="20"
                                     id="path3401-4"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="522.71936"
@@ -461,10 +469,10 @@
                                     cy="522.71936"
                                     cx="86.785713"
                                     id="path3401-4-7"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="464.50507"
@@ -475,10 +483,10 @@
                                     cy="464.50507"
                                     cx="210.71428"
                                     id="path3401-4-1"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="522.36218"
@@ -489,10 +497,10 @@
                                     cy="522.36218"
                                     cx="236.78572"
                                     id="path3401-4-3"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="564.86218"
@@ -503,10 +511,10 @@
                                     cy="564.86218"
                                     cx="213.21428"
                                     id="path3401-4-9"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="569.50507"
@@ -517,10 +525,10 @@
                                     cy="569.50507"
                                     cx="266.07144"
                                     id="path3401-4-14"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="600.93365"
@@ -531,10 +539,10 @@
                                     cy="600.93365"
                                     cx="235.35715"
                                     id="path3401-4-4"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="594.86218"
@@ -545,10 +553,10 @@
                                     cy="594.86218"
                                     cx="194.28572"
                                     id="path3401-4-0"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="616.29077"
@@ -559,10 +567,10 @@
                                     cy="616.29077"
                                     cx="177.14285"
                                     id="path3401-4-2"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="619.14789"
@@ -573,10 +581,10 @@
                                     cy="619.14789"
                                     cx="298.92856"
                                     id="path3401-4-40"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="635.57648"
@@ -587,10 +595,10 @@
                                     cy="635.57648"
                                     cx="273.21429"
                                     id="path3401-4-34"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="662.4433"
@@ -601,10 +609,10 @@
                                     cy="662.4433"
                                     cx="131.82491"
                                     id="path3401-4-34-4"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="694.76819"
@@ -615,10 +623,10 @@
                                     cy="694.76819"
                                     cx="231.32494"
                                     id="path3401-4-34-8"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="696.28345"
@@ -629,10 +637,10 @@
                                     cy="696.28345"
                                     cx="404.5661"
                                     id="path3401-4-34-40"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="715.47632"
@@ -643,10 +651,10 @@
                                     cy="715.47632"
                                     cx="360.11938"
                                     id="path3401-4-34-44"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="736.68951"
@@ -657,10 +665,10 @@
                                     cy="736.68951"
                                     cx="394.46457"
                                     id="path3401-4-34-9"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="481.62601"
@@ -671,10 +679,10 @@
                                     cy="481.62601"
                                     cx="515.68286"
                                     id="path3401-4-34-0"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="591.73267"
@@ -685,10 +693,10 @@
                                     cy="591.73267"
                                     cx="501.03568"
                                     id="path3401-4-34-1"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="579.61084"
@@ -699,10 +707,10 @@
                                     cy="579.61084"
                                     cx="636.39612"
                                     id="path3401-4-34-2"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="459.90775"
@@ -713,10 +721,10 @@
                                     cy="459.90775"
                                     cx="712.15753"
                                     id="path3401-4-34-26"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="657.89764"
@@ -727,10 +735,10 @@
                                     cy="657.89764"
                                     cx="529.31995"
                                     id="path3401-4-34-46"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="738.70984"
@@ -741,10 +749,10 @@
                                     cy="738.70984"
                                     cx="475.78186"
                                     id="path3401-4-34-3"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="795.27838"
@@ -755,10 +763,10 @@
                                     cy="795.27838"
                                     cx="451.03311"
                                     id="path3401-4-34-47"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="763.96362"
@@ -769,10 +777,10 @@
                                     cy="763.96362"
                                     cx="424.76913"
                                     id="path3401-4-34-7"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="766.99414"
@@ -783,10 +791,10 @@
                                     cy="766.99414"
                                     cx="368.70569"
                                     id="path3401-4-34-94"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="797.29871"
@@ -797,10 +805,10 @@
                                     cy="797.29871"
                                     cx="480.32755"
                                     id="path3401-4-34-6"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="763.96362"
@@ -811,10 +819,10 @@
                                     cy="763.96362"
                                     cx="526.28949"
                                     id="path3401-4-34-73"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="752.85199"
@@ -825,10 +833,10 @@
                                     cy="752.85199"
                                     cx="556.59406"
                                     id="path3401-4-34-5"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="725.07275"
@@ -839,10 +847,10 @@
                                     cy="725.07275"
                                     cx="568.71588"
                                     id="path3401-4-34-62"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="758.9129"
@@ -853,10 +861,10 @@
                                     cy="758.9129"
                                     cx="600.03064"
                                     id="path3401-4-34-78"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="773.56012"
@@ -867,10 +875,10 @@
                                     cy="773.56012"
                                     cx="575.78693"
                                     id="path3401-4-34-01"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="820.0271"
@@ -881,10 +889,10 @@
                                     cy="820.0271"
                                     cx="547.50269"
                                     id="path3401-4-34-38"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="821.03729"
@@ -895,10 +903,10 @@
                                     cy="821.03729"
                                     cx="583.86816"
                                     id="path3401-4-34-66"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="792.75299"
@@ -909,10 +917,10 @@
                                     cy="792.75299"
                                     cx="611.64734"
                                     id="path3401-4-34-76"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="772.04486"
@@ -923,10 +931,10 @@
                                     cy="772.04486"
                                     cx="630.33521"
                                     id="path3401-4-34-25"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="797.29871"
@@ -937,10 +945,10 @@
                                     cy="797.29871"
                                     cx="660.63977"
                                     id="path3401-4-34-67"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="814.47125"
@@ -951,10 +959,10 @@
                                     cy="814.47125"
                                     cx="638.41638"
                                     id="path3401-4-34-71"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="856.39264"
@@ -965,10 +973,10 @@
                                     cy="856.39264"
                                     cx="607.10168"
                                     id="path3401-4-34-671"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+                            
                             <circle
                                     r="10"
                                     cy="735.67938"
@@ -979,10 +987,10 @@
                                     cy="735.67938"
                                     cx="774.28192"
                                     id="path3401-4-34-381"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+                            
                             <circle
                                     r="10"
                                     cy="589.71234"
@@ -993,10 +1001,10 @@
                                     cy="589.71234"
                                     cx="882.87335"
                                     id="path3401-4-34-86"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                         <g class="city">
-                            <title>City</title>
+
                             <circle
                                     r="10"
                                     cy="477.58542"
@@ -1007,7 +1015,7 @@
                                     cy="477.58542"
                                     cx="912.16772"
                                     id="path3401-4-34-31"
-                                    class="mark" />
+                                    class="mark" data-toggle="tooltip" data-placement="bottom" title="Город"/>
                         </g>
                     </g>
                 </svg>
@@ -1176,7 +1184,7 @@ version="1.1"><metadata
 
     </div>
 
-    <div class="section fp-auto-height" id="section3">
+    <div class="section fp-auto-height parallax-window parallax-2" id="section3">
         <div class="intro orgcommittee">
             <div class="container-fluid clearfix">
                 <div class="col-sm-up-41p">
@@ -1282,14 +1290,14 @@ version="1.1"><metadata
         </div>
     </div>
 
-    <div class="section fp-auto-height" id="section4">
+    <div class="section fp-auto-height parallax-window parallax-2" id="section4">
         <div class="intro">
             <h1 class="title text-uppercase">Программа</h1>
             <div id="calendar"></div>
         </div>
     </div>
 
-    <div class="section fp-auto-height" id="section5">
+    <div class="section fp-auto-height parallax-window parallax-2" id="section5">
         <div class="intro news-1">
             <h1 class="title text-uppercase pl-15">Новости</h1>
             <div class="container-fluid reverse-block clearfix">
@@ -1446,7 +1454,7 @@ version="1.1"><metadata
         </div>
     </div>
 
-    <div class="section fp-auto-height" id="section6">
+    <div class="section fp-auto-height parallax-window parallax-3" id="section6">
         <div class="intro news-2">
             <h1 class="title text-uppercase pl-15">Новости</h1>
             <div class="container-fluid container-fluid-my">
@@ -1470,7 +1478,7 @@ version="1.1"><metadata
         </div>
     </div>
 
-    <div class="section fp-auto-height" id="section7">
+    <div class="section fp-auto-height parallax-window parallax-2" id="section7">
         <div class="intro gallery">
             <h1 class="title text-uppercase pl-15">Галерея</h1>
             <div class="wrap-content container-fluid">
@@ -1743,7 +1751,7 @@ version="1.1"><metadata
         </div>
     </div>
 
-    <div class="section fp-auto-height" id="section8">
+    <div class="section fp-auto-height parallax-window parallax-2" id="section8">
         <div class="intro partners">
             <h1 class="title text-uppercase pl-15 fs-24">Информационные партнеры</h1>
             <div class="wrap-content">
@@ -1778,7 +1786,7 @@ version="1.1"><metadata
         </div>
     </div>
 
-    <div class="section fp-auto-height" id="section9">
+    <div class="section fp-auto-height parallax-window parallax-2" id="section9">
         <div class="intro participants">
             <h1 class="title text-uppercase pl-15">
                 Участники
@@ -1965,7 +1973,7 @@ version="1.1"><metadata
                             <img src="template/assets/img/balerina.jpg" alt="">
                         </li>
                         <li>
-                            <img src="template/assets/img/balerina.jpg" alt="">
+                            <img src="template/assets/img/balerina-2.jpg" alt="">
                         </li>
                         <li>
                             <img src="template/assets/img/balerina.jpg" alt="">
