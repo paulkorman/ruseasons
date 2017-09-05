@@ -112,7 +112,7 @@ $(document).ready(function() {
     menu: '#main-menu',
     verticalCentered: false,
     autoScrolling: false,
-    //fitToSection: false,
+    fitToSection: false,
     onLeave: function(anchorLink, index){
       if(index == 1 || index == 7){
 
@@ -279,7 +279,39 @@ $(document).ready(function() {
     pagerType: 'short',
     nextText: '',
     prevText: ''
+  });
 
+
+
+  $('#calendar').fullCalendar({
+    locale: 'ru',
+    header: {
+      left:   'title',
+      center: '',
+      right:  'prev,next',
+    },
+    contentHeight: 500,
+    events: [
+      {
+        title: 'Выставка Старые Мастера',
+        start: '2017-09-11',
+        end: '2017-09-13',
+        color: '#63a031'
+      },
+      {
+        title: 'Мастер-классы А.Я. Вагановой ',
+        start: '2017-09-12',
+        end: '2017-09-14',
+        color: '#a08031'
+      },
+    ],
+    //windowResize: function(view) {
+    //  if ($(window).width() < 544){
+    //    $('#calendar').fullCalendar( 'changeView', 'basicDay' );
+    //  } else {
+    //    $('#calendar').fullCalendar( 'changeView', 'month' );
+    //  }
+    //}
   });
 
 
@@ -340,6 +372,8 @@ $(document).ready(function() {
       selMap = '#' + $(this).attr('data-map');
       $(selMap).css({'display':'block', 'margin': 'auto'});
   });
+
+
 
 
 

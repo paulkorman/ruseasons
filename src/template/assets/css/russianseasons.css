@@ -153,7 +153,8 @@ html .loader {
 
 html .loader_inner {
   background-image: url("../img/preloader.gif");
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #fff;
@@ -353,7 +354,8 @@ html .loader_inner {
 .slide1 {
   background-image: url(../img/ballet-red.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: 50% 0;
   position: relative;
 }
@@ -649,7 +651,8 @@ html .loader_inner {
 #slide2 {
   background-image: url(../img/ballet-red.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: 50% 0;
 }
 
@@ -681,8 +684,6 @@ html .loader_inner {
   background-color: #9F8030;
   margin: 0 auto;
   -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
 
@@ -714,7 +715,8 @@ html .loader_inner {
 #section1 {
   background: url(../img/ballet-light.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: 50% 0;
 }
 
@@ -871,7 +873,8 @@ html .loader_inner {
 #section6 {
   background-image: url(../img/zriteli.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: 50% 0;
 }
 
@@ -979,7 +982,8 @@ html .loader_inner {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAA8CAMAAAAwsEgmAAAAP1BMVEUAAACfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDAOvqS5AAAAFXRSTlMATvTwQutpWzcteOQkiNyWHMJ7dV3BxWcZAAAAZklEQVQ4y9XOuQGAMAxDUR8JuQMB9p+VDayCxlH7XyGyFhbZXZLdlc3O4rxrMHsS3/3VbPbDe4/F7NV5v1s3+/jZ6ZwXeRBjdiTaLqK2gkT0IR4ojpiR0F1E0oCEOBHwKSsjIVCsD0kjBPr5k/H+AAAAAElFTkSuQmCC") no-repeat;
   float: left;
   cursor: pointer;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 
 .arrow-slider-prev-gold a {
@@ -995,7 +999,8 @@ html .loader_inner {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAA8CAMAAAAwsEgmAAAAQlBMVEUAAACfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDCfgDA4aazPAAAAFnRSTlMATvTwQutpWy03eOQkiNyWHMJ7dV07PX5NBQAAAGpJREFUOMvV1TkWwCAIRVEF46yJGfa/1eyAX1gotO82HAqMMcMZeQIhYRkKskqEYygoKBEfv0Ak9kpEPLDISkQtNxRtVlz9XNprb2CBvXssGZx5dX/Eng4vd967Ow5yp8Wd5W7Zzr2iAfoPaHwFBh54JiEAAAAASUVORK5CYII=") no-repeat;
   float: right;
   cursor: pointer;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 
 .arrow-slider-next-gold a {
@@ -1102,7 +1107,8 @@ html .loader_inner {
   .slide1 .arrow-right::after {
     width: 21.91308px;
     height: 39.91311px;
-    background-size: cover;
+    -webkit-background-size: cover;
+            background-size: cover;
     margin-bottom: -15.6522px;
   }
   #slide1 .bottom .underline,
@@ -1262,7 +1268,8 @@ html .loader_inner {
   .slide1 .bottom-pos .arrow-right::after {
     width: 13.6192px;
     height: 24.8064px;
-    background-size: cover;
+    -webkit-background-size: cover;
+            background-size: cover;
     margin-bottom: -7px;
   }
   #slide1 .bottom-pos .mr--63,
@@ -1299,7 +1306,8 @@ html .loader_inner {
     width: 110%;
     margin-left: -5px;
     margin-right: -10px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .news-1 .gold-brd .red {
     width: 100%;
@@ -1386,5 +1394,3 @@ html .loader_inner {
     margin: 30px auto;
   }
 }
-
-/*# sourceMappingURL=russianseasons.css.map */

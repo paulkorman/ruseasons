@@ -75,7 +75,8 @@
     }
   }
 
-  #slide1 {
+  #slide1,
+  .slide1{
     .bottom-pos {
       padding: 0 22px;
       .col-md-9 {
@@ -256,7 +257,8 @@
     }
   }
 
-  #slide1 {
+  #slide1,
+  .slide1{
     .bottom {
       position: relative;
       width: auto;
@@ -265,7 +267,8 @@
       margin-bottom: 30px;
     }
   }
-  #slide1 .bottom-pos {
+  #slide1 .bottom-pos,
+  .slide1 .bottom-pos{
     padding: 0 10px;
     bottom: 100px;
     .pr-50-m {
@@ -429,6 +432,14 @@
     height: 25%;
   }
 
+  #calendar {
+    .fc-view-container {
+      overflow-x: scroll;
+      .fc-basic-view {
+        width: 180%;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width : 769px) {

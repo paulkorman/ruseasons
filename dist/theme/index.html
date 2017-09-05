@@ -3,14 +3,32 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Horizontal navigation dots - fullPage.js</title>
+    <title>Русские Сезоны</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="template/assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="template/assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="template/assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="template/assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="template/assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="template/assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="template/assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="template/assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="template/assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="template/assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="template/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="template/assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="template/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="template/assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="template/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <link href="template/assets/css/core.min.css" rel="stylesheet">
     <link href="template/assets/vendor/fullPage.js-master/jquery.fullPage.css" rel="stylesheet">
     <link href="template/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="template/assets/vendor/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
+    <link href="template/assets/vendor/fullcalendar/fullcalendar.min.css" rel="stylesheet">
     <link href="template/assets/css/russianseasons.min.css" rel="stylesheet">
 
 
@@ -25,6 +43,10 @@
     <script src="template/assets/vendor/parallax/parallax.min.js"></script>
     <script src="template/assets/vendor/jquery.bxslider/jquery.bxslider.js"></script>
     <script src="template/assets/vendor/timmywil-jquery.panzoom/dist/jquery.panzoom.min.js"></script>
+    <script src="template/assets/vendor/fullcalendar/lib/moment.min.js"></script>
+    <script src="template/assets/vendor/fullcalendar/fullcalendar.min.js"></script>
+    <script src="template/assets/vendor/fullcalendar/locale-all.js"></script>
+
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="template/assets/js/core.min.js"></script>
     <script src="template/assets/js/script.js"></script>
@@ -49,9 +71,9 @@
     <div class="select-lang hidden-sm-up">
         <div class="current-lang"></div>
         <ul>
-            <li class="active"><a href="#">Ru</a></li>
-            <li><a href="#">En</a></li>
-            <li><a href="#">Jap</a></li>
+            <li class="active"><a href="#" data-lang="ru">Ru</a></li>
+            <li><a href="#" data-lang="en">En</a></li>
+            <li><a href="#" data-lang="ja">Jpn</a></li>
         </ul>
     </div>
 </div>
@@ -107,9 +129,9 @@
         <div class="langs">
             <div class="text-center">
                 <ul class="fs-14">
-                    <li class="text-left"><a href="#" class="active">Ru</a></li>
-                    <li class="text-left"><a href="#">Eng</a></li>
-                    <li class="text-left"><a href="#">Jpn</a></li>
+                    <li class="text-left active"><a href="#" data-lang="ru">Ru</a></li>
+                    <li class="text-left"><a href="#" data-lang="en">Eng</a></li>
+                    <li class="text-left"><a href="#" data-lang="ja">Jpn</a></li>
                 </ul>
             </div>
         </div>
@@ -177,7 +199,7 @@
             </div>
         </div>
 
-        <div class="slide" id="slide1">
+        <div class="slide slide1">
             <div class="bottom-pos">
                 <div class="container-fluid">
 
@@ -1263,7 +1285,7 @@ version="1.1"><metadata
     <div class="section fp-auto-height" id="section4">
         <div class="intro">
             <h1 class="title text-uppercase">Программа</h1>
-            <p>Для всесторонней координации работы по подготовке проекта был создан Оргкомитет «Русских сезонов» под председательством Заместителя Председателя Правительства Российской Федерации О.Ю. Голодец.</p>
+            <div id="calendar"></div>
         </div>
     </div>
 

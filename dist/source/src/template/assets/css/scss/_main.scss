@@ -201,7 +201,7 @@ html .loader_inner {
         text-decoration: none;
       }
     }
-    .active {
+    li.active a {
       color: $luxor_gold;
     }
   }
@@ -285,7 +285,8 @@ html .loader_inner {
   }
 }
 
-#slide1 {
+#slide1,
+.slide1{
   background-image: url(../img/ballet-red.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -940,15 +941,21 @@ $pl: 120px;
   }
 }
 
-#mycalendar {
+#calendar {
+  h2 {
+    font-size: 17px;
+    font-family: $MyriadPro;
+    color: #d1111c;
+    text-transform: capitalize;
+  }
   .fc-right {
     .fc-button,
-    h2 {
-      float: left;
-    }
+
     .fc-button {
       border: none;
       background: none;
     }
   }
 }
+
+

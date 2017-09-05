@@ -257,7 +257,7 @@ html .loader_inner {
   text-decoration: none;
 }
 
-#rightbar .langs .active {
+#rightbar .langs li.active a {
   color: #9F8030;
 }
 
@@ -350,7 +350,8 @@ html .loader_inner {
   color: #9F8030;
 }
 
-#slide1 {
+#slide1,
+.slide1 {
   background-image: url(../img/ballet-red.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -359,14 +360,16 @@ html .loader_inner {
   position: relative;
 }
 
-#slide1 .bottom-pos {
+#slide1 .bottom-pos,
+.slide1 .bottom-pos {
   padding: 0 120px;
   position: absolute;
   width: 100%;
   bottom: 113px;
 }
 
-#slide1 .gold-brd {
+#slide1 .gold-brd,
+.slide1 .gold-brd {
   border: 3px solid #9F8030;
   margin-right: 38px;
   padding-top: 40px;
@@ -377,16 +380,19 @@ html .loader_inner {
   font-weight: 500;
 }
 
-#slide1 .gold-brd p {
+#slide1 .gold-brd p,
+.slide1 .gold-brd p {
   margin-bottom: 0;
 }
 
-#slide1 .arrow-right {
+#slide1 .arrow-right,
+.slide1 .arrow-right {
   line-height: 51px;
   cursor: pointer;
 }
 
-#slide1 .arrow-right::after {
+#slide1 .arrow-right::after,
+.slide1 .arrow-right::after {
   content: '';
   display: inline-block;
   width: 28px;
@@ -396,24 +402,28 @@ html .loader_inner {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAzCAMAAACzKZhFAAAAaVBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8G612AAAAInRSTlMADWjkdyQV9utDHPrc01vxmIdOLQPJpcK+N9rPVjwxtbEdUin5vwAAAJJJREFUOMu11EcOAjEQRFF7cs5gmAT0/Q9JzZ6yhOT+27f/xhjrSsOyN8mpnr149MihB9MS2j9VtIaeTCdoMWvoLtCUaQeNVTS69OPTptLQBLpmPm1VdIRulukAdcTmQqSe/rcUJjuxGNaFteqyiFgT3rIVlhBrw5vdYCMbjoI52EDsEd6WF+y+/MY3NRR5DMrtCzx8GX2MvXlSAAAAAElFTkSuQmCC") no-repeat;
 }
 
-#slide1 .bottom {
+#slide1 .bottom,
+.slide1 .bottom {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
-#slide1 .bottom .fs-14 {
+#slide1 .bottom .fs-14,
+.slide1 .bottom .fs-14 {
   font-family: "MyriadPro";
   color: #fff;
   font-weight: 300;
 }
 
-#slide1 .bottom .underline {
+#slide1 .bottom .underline,
+.slide1 .bottom .underline {
   padding: 0 20px;
   cursor: pointer;
 }
 
-#slide1 .bottom .underline::after {
+#slide1 .bottom .underline::after,
+.slide1 .bottom .underline::after {
   display: block;
   content: '';
   width: 100%;
@@ -999,12 +1009,15 @@ html .loader_inner {
   height: 100%;
 }
 
-#mycalendar .fc-right .fc-button,
-#mycalendar .fc-right h2 {
-  float: left;
+#calendar h2 {
+  font-size: 17px;
+  font-family: "MyriadPro";
+  color: #d1111c;
+  text-transform: capitalize;
 }
 
-#mycalendar .fc-right .fc-button {
+#calendar .fc-right .fc-button,
+#calendar .fc-right .fc-button {
   border: none;
   background: none;
 }
@@ -1074,29 +1087,36 @@ html .loader_inner {
   .section .intro {
     padding: 145px 75px 90px 22px;
   }
-  #slide1 .bottom-pos {
+  #slide1 .bottom-pos,
+  .slide1 .bottom-pos {
     padding: 0 22px;
   }
-  #slide1 .bottom-pos .col-md-9 {
+  #slide1 .bottom-pos .col-md-9,
+  .slide1 .bottom-pos .col-md-9 {
     padding: 0;
   }
-  #slide1 .bottom-pos .pr-50-m {
+  #slide1 .bottom-pos .pr-50-m,
+  .slide1 .bottom-pos .pr-50-m {
     padding-right: 50px;
   }
-  #slide1 .gold-brd p.fs-18 {
+  #slide1 .gold-brd p.fs-18,
+  .slide1 .gold-brd p.fs-18 {
     line-height: 39.91311px;
   }
-  #slide1 .arrow-right::after {
+  #slide1 .arrow-right::after,
+  .slide1 .arrow-right::after {
     width: 21.91308px;
     height: 39.91311px;
     -webkit-background-size: cover;
             background-size: cover;
     margin-bottom: -15.6522px;
   }
-  #slide1 .bottom .underline {
+  #slide1 .bottom .underline,
+  .slide1 .bottom .underline {
     padding: 0 20px !important;
   }
-  #slide1 .bottom .col-md-12:first-child {
+  #slide1 .bottom .col-md-12:first-child,
+  .slide1 .bottom .col-md-12:first-child {
     margin-bottom: 20px;
   }
   #rightbar {
@@ -1205,21 +1225,26 @@ html .loader_inner {
   #header .select-lang {
     margin-right: 10px;
   }
-  #slide1 .bottom {
+  #slide1 .bottom,
+  .slide1 .bottom {
     position: relative;
     width: auto;
   }
-  #slide1 .col-lg-8.mb-30 {
+  #slide1 .col-lg-8.mb-30,
+  .slide1 .col-lg-8.mb-30 {
     margin-bottom: 30px;
   }
-  #slide1 .bottom-pos {
+  #slide1 .bottom-pos,
+  .slide1 .bottom-pos {
     padding: 0 10px;
     bottom: 100px;
   }
-  #slide1 .bottom-pos .pr-50-m {
+  #slide1 .bottom-pos .pr-50-m,
+  .slide1 .bottom-pos .pr-50-m {
     padding-right: 0;
   }
-  #slide1 .bottom-pos .gold-brd {
+  #slide1 .bottom-pos .gold-brd,
+  .slide1 .bottom-pos .gold-brd {
     margin-right: 20px;
     margin-left: 20px;
     padding-right: 0;
@@ -1227,24 +1252,28 @@ html .loader_inner {
     padding-bottom: 24px;
     border-width: 2px;
   }
-  #slide1 .bottom-pos p.fs-18.hidden-sm-up {
+  #slide1 .bottom-pos p.fs-18.hidden-sm-up,
+  .slide1 .bottom-pos p.fs-18.hidden-sm-up {
     line-height: 24.8064px;
     font-size: 14px;
     color: #ffffff;
     font-family: "Conv_MuseoCyrl 500";
   }
-  #slide1 .bottom-pos .arrow-right {
+  #slide1 .bottom-pos .arrow-right,
+  .slide1 .bottom-pos .arrow-right {
     padding-top: 54px;
     margin-right: 23px;
   }
-  #slide1 .bottom-pos .arrow-right::after {
+  #slide1 .bottom-pos .arrow-right::after,
+  .slide1 .bottom-pos .arrow-right::after {
     width: 13.6192px;
     height: 24.8064px;
     -webkit-background-size: cover;
             background-size: cover;
     margin-bottom: -7px;
   }
-  #slide1 .bottom-pos .mr--63 {
+  #slide1 .bottom-pos .mr--63,
+  .slide1 .bottom-pos .mr--63 {
     margin-right: -10px;
   }
   #main-menu {
@@ -1339,6 +1368,12 @@ html .loader_inner {
   }
   .modal:before {
     height: 25%;
+  }
+  #calendar .fc-view-container {
+    overflow-x: scroll;
+  }
+  #calendar .fc-view-container .fc-basic-view {
+    width: 180%;
   }
 }
 
