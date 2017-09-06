@@ -580,7 +580,7 @@ html .loader_inner {
 
 #fp-nav {
   position: fixed;
-  z-index: 100;
+  z-index: 103;
   margin-top: -32px;
   margin-right: 54px;
   top: 50%;
@@ -631,6 +631,22 @@ html .loader_inner {
 $pl: 120px;
 
 .section {
+  .intro {
+    padding: 145px $pl 90px;
+    line-height: 1.429;
+    font-size: 14px;
+    font-family: $MuseoCyrl500;
+  }
+  .title {
+    font-family: $MuseoCyrl500;
+    font-size: 35px;
+    color: $luxor_gold;
+    margin-bottom: 30px;
+  }
+
+}
+
+.section-my {
   .intro {
     padding: 145px $pl 90px;
     line-height: 1.429;
@@ -812,11 +828,12 @@ $pl: 120px;
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAZCAMAAAA2Re/AAAAATlBMVEUAAAC0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSXsiVjRAAAAGnRSTlMA8UT2aVs3c07r5N6XiHhRLSTVv6WgfSkcEG7Dz0wAAABVSURBVBjTdc83EoAwEANA5HMCg00O//8o7elmrG4rScO3x0Gngp3gyF6MwQ6SjRu5SSBnYwfPFmMkzbecSlu5tKZZ6SGt49JVxE2qXM/jeHr/2EH6AaRsAkUbli2ZAAAAAElFTkSuQmCC') no-repeat;
 }
 
-#section6 {
+.section6 {
   background-image: url(../img/zriteli.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0;
+  overflow-y: scroll;
 }
 
 .modal-body {
@@ -1008,6 +1025,30 @@ $pl: 120px;
   }
   span:last-child {
     margin-top: -15px;
+  }
+}
+
+#section5 {
+  overflow: hidden;
+  position: relative;
+
+  > .clearfix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    > div {
+      float: left;
+      height: 100%;
+    }
+  }
+
+}
+
+.col-sm-up-41p {
+  //padding-right: 10px;
+  .hidden-md-down {
+    margin-right: 10px;
   }
 }
 

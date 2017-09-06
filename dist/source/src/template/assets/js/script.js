@@ -163,7 +163,7 @@ $(document).ready(function() {
   $('.slider-2').bxSlider({
     minSlides: 1,
     maxSlides: 1,
-    slideMargin: 0,
+    slideMargin: 10,
     //slideWidth: 300,
     pager: true,
     nextSelector: '.slider-2-next',
@@ -347,21 +347,21 @@ $(document).ready(function() {
     $('#modal-gallery').modal('show');
   });
 
-  $('.news-backlink-js').on('click', function(e){
-    goTo('news-1',1)
-  });
+  //$('.news-backlink-js').on('click', function(e){
+  //  goTo('news-1',1)
+  //});
+  //
+  //$('.news-backlink-js').on('click', function(e){
+  //  goTo('news-1',1)
+  //});
 
-  $('.news-backlink-js').on('click', function(e){
-    goTo('news-1',1)
-  });
-
-  $('.news-1 .item').on('click', function(e){
-    goTo('news-2',1)
-  });
-
-  $('.go-to-news-js').on('click', function(e){
-    goTo('news-2',1)
-  });
+  //$('.news-1 .item').on('click', function(e){
+  //  goTo('news-2',1)
+  //});
+  //
+  //$('.go-to-news-js').on('click', function(e){
+  //  goTo('news-2',1)
+  //});
 
   // Map selection
 
@@ -381,6 +381,26 @@ $(document).ready(function() {
   $('.parallax-1').parallax({imageSrc: '../template/assets/img/ballet-light.jpg'});
   $('.parallax-2').parallax({imageSrc: '../template/assets/img/bg-img.png'});
   $('.parallax-3').parallax({imageSrc: '../template/assets/img/zriteli.jpg'});
+
+
+  //$('#section10').css('width',windowWidth);
+  $('#section5 > .clearfix > div').css('width', windowWidth);
+  $('#section5').css('height', windowHeight);
+
+  $('#section5 > .clearfix').css('width',2*windowWidth);
+
+  $('.news-1 .item').on('click', function(e){
+    $('#section5 > .clearfix').animate({
+      'left': -windowWidth
+    }, 300);
+  });
+
+  $('.news-backlink-js').on('click', function(e){
+    $('#section5 > .clearfix').animate({
+      'left': 0
+    }, 300);
+  })
+
 
 
 

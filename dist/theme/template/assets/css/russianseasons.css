@@ -667,7 +667,7 @@ html .loader_inner {
 
 #fp-nav {
   position: fixed;
-  z-index: 100;
+  z-index: 103;
   margin-top: -32px;
   margin-right: 54px;
   top: 50%;
@@ -711,6 +711,20 @@ html .loader_inner {
 }
 
 .section .title {
+  font-family: "Conv_MuseoCyrl 500";
+  font-size: 35px;
+  color: #9F8030;
+  margin-bottom: 30px;
+}
+
+.section-my .intro {
+  padding: 145px 120px 90px;
+  line-height: 1.429;
+  font-size: 14px;
+  font-family: "Conv_MuseoCyrl 500";
+}
+
+.section-my .title {
   font-family: "Conv_MuseoCyrl 500";
   font-size: 35px;
   color: #9F8030;
@@ -876,12 +890,13 @@ html .loader_inner {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAZCAMAAAA2Re/AAAAATlBMVEUAAAC0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSW0FSXsiVjRAAAAGnRSTlMA8UT2aVs3c07r5N6XiHhRLSTVv6WgfSkcEG7Dz0wAAABVSURBVBjTdc83EoAwEANA5HMCg00O//8o7elmrG4rScO3x0Gngp3gyF6MwQ6SjRu5SSBnYwfPFmMkzbecSlu5tKZZ6SGt49JVxE2qXM/jeHr/2EH6AaRsAkUbli2ZAAAAAElFTkSuQmCC") no-repeat;
 }
 
-#section6 {
+.section6 {
   background-image: url(../img/zriteli.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   background-position: 50% 0;
+  overflow-y: scroll;
 }
 
 .modal-body {
@@ -1067,6 +1082,27 @@ html .loader_inner {
   margin-top: -15px;
 }
 
+#section5 {
+  overflow: hidden;
+  position: relative;
+}
+
+#section5 > .clearfix {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+#section5 > .clearfix > div {
+  float: left;
+  height: 100%;
+}
+
+.col-sm-up-41p .hidden-md-down {
+  margin-right: 10px;
+}
+
 @media only screen and (max-width: 480px) {
   #fp-nav {
     display: none;
@@ -1132,6 +1168,9 @@ html .loader_inner {
   .section .intro {
     padding: 145px 75px 90px 22px;
   }
+  .section-my .intro {
+    padding: 145px 75px 90px 22px;
+  }
   #slide1 .bottom-pos,
   .slide1 .bottom-pos {
     padding: 0 22px;
@@ -1193,6 +1232,10 @@ html .loader_inner {
     height: 46.9566px;
   }
   .section .title {
+    margin-bottom: 40px;
+    padding-left: 0;
+  }
+  .section-my .title {
     margin-bottom: 40px;
     padding-left: 0;
   }
@@ -1333,11 +1376,21 @@ html .loader_inner {
   .section .intro {
     padding: 120px 10px 90px;
   }
+  .section-my .intro {
+    padding: 0 10px 90px;
+  }
   .section .container-fluid {
     padding-right: 0;
     padding-left: 0;
   }
   .section .title {
+    margin-bottom: 20px;
+  }
+  .section-my .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .section-my .title {
     margin-bottom: 20px;
   }
   #header {

@@ -75,6 +75,12 @@
     }
   }
 
+  .section-my {
+    .intro {
+      padding: 145px 75px 90px 22px;
+    }
+  }
+
   #slide1,
   .slide1{
     .bottom-pos {
@@ -143,6 +149,12 @@
     height: 60px * $zoom;
   }
   .section {
+    .title {
+      margin-bottom: 40px;
+      padding-left: 0;
+    }
+  }
+  .section-my {
     .title {
       margin-bottom: 40px;
       padding-left: 0;
@@ -323,7 +335,20 @@
     padding: 120px 10px 90px;
   }
 
+  .section-my .intro {
+    padding: 0 10px 90px;
+  }
+
   .section {
+    .container-fluid {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .title {
+      margin-bottom: 20px;
+    }
+  }
+  .section-my {
     .container-fluid {
       padding-right: 0;
       padding-left: 0;
