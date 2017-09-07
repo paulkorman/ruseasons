@@ -1103,6 +1103,11 @@ html .loader_inner {
   margin-right: 10px;
 }
 
+.col-xs-6-salo {
+  width: 50%;
+  padding: 5px;
+}
+
 @media only screen and (max-width: 480px) {
   #fp-nav {
     display: none;

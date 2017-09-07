@@ -81,6 +81,21 @@ $(document).ready(function() {
 
   });
 
+  $(window).on( 'scroll', function(){
+
+    var leftPos = $('#wrap-main-menu').css('right');
+    leftPos = parseInt(leftPos, 10);
+
+    if(leftPos >= 0) {
+      $('#wrap-main-menu').animate({
+        right: -320
+      }, 300, function() {});
+    }
+
+  });
+
+
+
   //select lang mobile version
 
   $('.select-lang .current-lang').text($('.select-lang .active a').text());
@@ -114,14 +129,14 @@ $(document).ready(function() {
     autoScrolling: false,
     fitToSection: false,
     onLeave: function(anchorLink, index){
-      if(index == 1 || index == 7){
+      if(index == 1 ){
 
         $('#header .logo img').attr('src','template/assets/img/logo-dark.png');
         $('#rightbar .year-select a').css('color','#ffffff');
         console.log(!$('#rightbar .langs a').hasClass('active'));
         $('#rightbar .langs a:not(.active)').css('color', '#ffffff');
 
-      } else if(index == 2 || index == 3 || index == 4 || index == 5 || index == 6 || index == 8 || index == 9 || index == 10) {
+      } else if(index == 2 || index == 3 || index == 4 || index == 5 || index == 6 || index == 7 || index == 8 || index == 9 || index == 10) {
 
         $('#header .logo img').attr('src','template/assets/img/logo-light.png');
         $('#rightbar .year-select a').css('color','#9F8030');
