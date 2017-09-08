@@ -1108,6 +1108,19 @@ html .loader_inner {
   padding: 5px;
 }
 
+.svg-full-width {
+  width: 125%;
+  height: 0;
+  padding-top: 48%;
+  position: relative;
+}
+
+.svg-full-width svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 @media only screen and (max-width: 480px) {
   #fp-nav {
     display: none;

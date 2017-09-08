@@ -8,41 +8,43 @@ function goTo(anchor,slide){
   $.fn.fullpage.moveTo(anchor, slide);
 }
 
+$(window).on('load', function(){
+
+  $(".loader_inner").fadeOut();
+  $(".loader").delay(400).fadeOut("slow");
+
+  //var svgobject = document.getElementById('svgmap'); // Находим тег <object>
+  //if ('contentDocument' in svgobject) {              // У нас действительно там что-то есть?
+  //  var svgdom = jQuery(svgobject.contentDocument);  // Получаем доступ к объектной модели SVG-файла
+  //  // Теперь делаем свою работу, например:
+  //  $("#45", svgdom).hover(function(){
+  //    console.log('fff');
+  //    $("#45 .wrap-mark", svgdom).css('display','block');
+  //  });
+  //  $("#45", svgdom).on('click',function(){
+  //    console.log('ura');
+  //  });  // Находим тег с id="figure1" в SVG DOM и заливаем его красным
+  //}
+
+  // Get the Object by ID
+  //var a = document.getElementById("svgmap");
+  //// Get the SVG document inside the Object tag
+  //var svgDoc = a.contentDocument;
+  //// Get one of the SVG items by ID;
+  //var city = svgDoc.getElementsByClassName("city");
+  //var wrapMark = svgDoc.getElementsByClassName("wrap-mark");
+  //// Set the colour to something else
+  //$(city).on('click',function(){
+  //  var wrapMark = $(this).children(".wrap-mark");
+  //  //$(wrapMark).addClass("visible");
+  //  console.log($(this).children(".mark").attr("r"));
+  //});
+
+});
+
 $(document).ready(function() {
 
-  $(window).on('load', function(){
 
-    $(".loader_inner").fadeOut();
-    $(".loader").delay(400).fadeOut("slow");
-
-    //var svgobject = document.getElementById('svgmap'); // Находим тег <object>
-    //if ('contentDocument' in svgobject) {              // У нас действительно там что-то есть?
-    //  var svgdom = jQuery(svgobject.contentDocument);  // Получаем доступ к объектной модели SVG-файла
-    //  // Теперь делаем свою работу, например:
-    //  $("#45", svgdom).hover(function(){
-    //    console.log('fff');
-    //    $("#45 .wrap-mark", svgdom).css('display','block');
-    //  });
-    //  $("#45", svgdom).on('click',function(){
-    //    console.log('ura');
-    //  });  // Находим тег с id="figure1" в SVG DOM и заливаем его красным
-    //}
-
-    // Get the Object by ID
-    //var a = document.getElementById("svgmap");
-    //// Get the SVG document inside the Object tag
-    //var svgDoc = a.contentDocument;
-    //// Get one of the SVG items by ID;
-    //var city = svgDoc.getElementsByClassName("city");
-    //var wrapMark = svgDoc.getElementsByClassName("wrap-mark");
-    //// Set the colour to something else
-    //$(city).on('click',function(){
-    //  var wrapMark = $(this).children(".wrap-mark");
-    //  //$(wrapMark).addClass("visible");
-    //  console.log($(this).children(".mark").attr("r"));
-    //});
-
-  });
 
   //change orientation and reload arter resize window
   var ratio = window.innerWidth/window.innerHeight;
